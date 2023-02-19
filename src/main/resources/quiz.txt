@@ -1,0 +1,22 @@
+Java is a:
+compiled language
+interpreted language
+*both
+
+What is the correct syntax to output "Hello World" in Java?
+cout<<"Hello World"
+Console.WriteLine("Hello World")
+*System.out.println("Hello World")
+print("Hello World")
+
+Which of the following is not a JavaScript library?
+React
+Angular
+Vue
+*Spring
+
+Java's object relational mapper is called
+*Java Persistance Api
+Entity Framework Core
+Eloquent
+Prisma
