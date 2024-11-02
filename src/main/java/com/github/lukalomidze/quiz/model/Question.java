@@ -1,4 +1,4 @@
-package com.github.overdrowsed.quiz.model;
+package com.github.lukalomidze.quiz.model;
 
 import java.util.List;
 

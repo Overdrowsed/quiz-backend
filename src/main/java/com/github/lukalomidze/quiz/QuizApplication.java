@@ -1,4 +1,4 @@
-package com.github.overdrowsed.quiz;
+package com.github.lukalomidze.quiz;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

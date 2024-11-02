@@ -1,4 +1,4 @@
-package com.github.overdrowsed.quiz.model;
+package com.github.lukalomidze.quiz.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -22,13 +22,13 @@ public class Answer {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     @Column(length = 500)
-    private String answer;
+    private String text;
 
-    public Answer(String answer) {
-        if(answer.startsWith("*")){
-            answer = answer.replaceFirst("\\*", "");
+    public Answer(String text) {
+        if (text.startsWith("*")) {
+            text = text.replaceFirst("\\*", "");
         }
 
-        this.answer = answer;
+        this.text = text;
     }
 }

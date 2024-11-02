@@ -8,11 +8,11 @@
 		<version>3.0.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.github.overdrowsed</groupId>
+	<groupId>com.github.lukalomidze</groupId>
 	<artifactId>quiz</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>quiz</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Quiz backend</description>
 	<properties>
 		<java.version>18</java.version>
 	</properties>
@@ -45,11 +45,10 @@
 		</dependency>
 
 		<dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
-			<version>42.5.3</version>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
 			<scope>runtime</scope>
-		</dependency>		
+		</dependency>
 	</dependencies>
 
 	<build>
