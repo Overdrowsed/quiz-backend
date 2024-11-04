@@ -1,9 +1,6 @@
 package com.github.lukalomidze.quiz.data;
 
 import java.io.IOException;
-import java.net.URISyntaxException;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,13 +27,19 @@ public class DataInitializer implements ApplicationRunner {
         createNewQuiz();        
     }
 
-    public void createNewQuiz() {        
-        String questionsString = ""; 
-
+    public void createNewQuiz() {
+        String questionsString = "";
+        
         try {
-            questionsString = Files.readString(Path.of(this.getClass().getClassLoader().getResource("quiz.txt").toURI()));
-        } catch(IOException | URISyntaxException exception) {
-            System.out.println(exception);
+            questionsString = new String(
+                this
+                    .getClass()
+                    .getClassLoader()
+                    .getResourceAsStream("quiz.txt")
+                .readAllBytes()
+            );
+        } catch (IOException exception) {
+            return;
         }
 
         var splitQuestions = questionsString.split("(?m)^\\s*$");
