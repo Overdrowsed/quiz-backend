@@ -1,6 +1,6 @@
 # quiz-backend
 Backend for the quiz app. Required to be self hosted. Currently configured to use PostgreSQL. Backend features three routes: 
-1. `/new-quiz` puts the `quiz.txt` available in the resources folder into the database. Needs to be called before app is usable. `quiz.txt` uses the following convention:
+1. On startup, `quiz.txt` available in the resources folder is put into the database. The file uses the following convention:
 -first up is the question prompt, written on a single line.
 -next several lines are possible answers, the correct one must begin with `*`, only one correct answer is permitted per question
 -each individual question ("quiz item") is separated by an empty line
